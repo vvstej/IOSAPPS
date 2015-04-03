@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NavigationBars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aG2-Oi-QgD">
+                                <rect key="frame" x="0.0" y="38" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="TJe-KZ-nuq"/>
+                                    <constraint firstAttribute="height" constant="44" id="zuO-cA-53a"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Navigation Bar" id="g3j-lK-R5r">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="a04-KE-RO8"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="s9t-Ir-1kB"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxc-5V-fb1">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="UrQ-hK-Jq8"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="24X-GS-5Wj"/>
+                                    <barButtonItem title="Item" id="B5W-5K-Gra"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Cxc-5V-fb1" secondAttribute="bottom" id="JZP-1b-gdC"/>
+                            <constraint firstItem="aG2-Oi-QgD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="Jol-0s-7x8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aG2-Oi-QgD" secondAttribute="trailing" constant="-16" id="ams-yN-d7m"/>
+                            <constraint firstItem="aG2-Oi-QgD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="gLn-O6-AnX"/>
+                            <constraint firstAttribute="centerX" secondItem="aG2-Oi-QgD" secondAttribute="centerX" id="oQT-AD-ocA"/>
+                            <constraint firstItem="Cxc-5V-fb1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="pC7-D4-GfH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cxc-5V-fb1" secondAttribute="trailing" constant="-16" id="tRU-hq-Tzj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
